@@ -122,7 +122,20 @@ for device tree:
 cp /mnt/usb/boot/dtb/*.dtb /boot/dtb
 ```
 
-17) 
+17)  Finish the arch install as normal
+18) Copy the Firmware (If you're on the Lenovo Slim, you can use the Firmware on this repo) using ubuntu tools in the live
+```bash
+sudo apt install qcom-firmware-extract
+```
+and
+```bash
+sudo qcom-firmware-extract 
+```
+and copy the firmware from the /lib/ in the live to the arch installation
+20) Exit the Chroot
+21) Edit Grub to boot from NVME
+22) Reboot and boot from the NVME
+23) build newer kernel, initrd and dtb
 
 
 ## SSD Shenanigains
