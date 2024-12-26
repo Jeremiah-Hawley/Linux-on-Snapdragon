@@ -7,8 +7,9 @@ It appears that there are three options for linux on the X Elite chip,
 1) You use the debian-esque distro from qualcomm https://git.codelinaro.org/linaro/qcomlt/demos/debian-12-installer-image
 2) You use the Ubuntu 24.10 Concept https://discourse.ubuntu.com/t/ubuntu-24-10-concept-snapdragon-x-elite/48800
 3) You use the sub-par arch linux on arm (https://archlinuxarm.org/platforms/armv8/generic) generic with the qualcomm or ubuntu kernel
+4) You could try to install gentoo, and use the newest gentoo kernel, or the ubuntu/qualcomm kernel
 
-## Obviously we're picking option number 3
+# Arch
 1) Download Ubuntu for X Elite (https://people.canonical.com/~platform/images/ubuntu-concept/oracular-desktop-arm64+x1e.iso)
 2) Decide if you're going to use a new ssd or re-partition your current one (skip to the other section and come back)
 3) Flash Ubuntu to a USB Drive
@@ -153,3 +154,5 @@ partition size should change on ram and ssd size,
 2) Second, is to determine boot partition size, 1G is overkill, but It's only 1G so might as well
 3) Finally is your root (/) partition, just do the rest of your drive (Root = Total - Swap - Boot)
 
+# Gentoo
+Gentoo will be harder by virtue of being gentoo, I've played around with it a little bit and I've ran into a lot of issues when trying to install a kernel (for obvious reasons), still struggling trying to figure out how to use the Ubuntu kernel instead. This section, for now will just be my notes while I struggle through it.
